@@ -56,25 +56,37 @@ const Portfolium: React.FC<PortfoliumProps> = ({
       </button>
       <h2 className="text-4xl font-bold mb-4 relative z-10">Mi Portafolio</h2>
       <p className="mb-8 max-w-2xl relative z-10">
-        Aquí podras ver mis proyectos, habilidades y videos. Haz clic
-        sobre cada pagina web para verlas en linea.
+        Aquí podras ver mis proyectos, habilidades y videos. Haz clic sobre cada
+        pagina web para verlas en linea.
       </p>
       {/* Botones de filtro y scroll */}
       <div className="flex gap-6 mb-10 relative z-10">
         <button
-          className={`pb-2 cursor-pointer border-b-4 transition-colors font-semibold text-lg ${activeSection === "paginasWeb" ? "border-indigo-400 text-indigo-300" : "border-transparent text-white hover:text-indigo-200"}`}
+          className={`pb-2 cursor-pointer border-b-4 transition-colors font-semibold text-lg ${
+            activeSection === "paginasWeb"
+              ? "border-indigo-400 text-indigo-300"
+              : "border-transparent text-white hover:text-indigo-200"
+          }`}
           onClick={() => handleScroll("paginasWeb")}
         >
           Páginas Web
         </button>
         <button
-          className={`pb-2 cursor-pointer border-b-4 transition-colors font-semibold text-lg ${activeSection === "disenoUXUI" ? "border-indigo-400 text-indigo-300" : "border-transparent text-white hover:text-indigo-200"}`}
+          className={`pb-2 cursor-pointer border-b-4 transition-colors font-semibold text-lg ${
+            activeSection === "disenoUXUI"
+              ? "border-indigo-400 text-indigo-300"
+              : "border-transparent text-white hover:text-indigo-200"
+          }`}
           onClick={() => handleScroll("disenoUXUI")}
         >
           Diseño UX/UI
         </button>
         <button
-          className={`pb-2 cursor-pointer border-b-4 transition-colors font-semibold text-lg ${activeSection === "edicionVideo" ? "border-indigo-400 text-indigo-300" : "border-transparent text-white hover:text-indigo-200"}`}
+          className={`pb-2 cursor-pointer border-b-4 transition-colors font-semibold text-lg ${
+            activeSection === "edicionVideo"
+              ? "border-indigo-400 text-indigo-300"
+              : "border-transparent text-white hover:text-indigo-200"
+          }`}
           onClick={() => handleScroll("edicionVideo")}
         >
           Edición de Video
@@ -87,11 +99,24 @@ const Portfolium: React.FC<PortfoliumProps> = ({
           <h3 className="text-2xl font-bold mb-4">Páginas Web</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {paginasWeb.map((imgSrc, index) => (
-              <div key={index} className="relative group overflow-hidden shadow-lg hover:scale-105 transition-transform cursor-pointer flex justify-center items-center">
-                <img src={imgSrc} alt={`Web ${index + 1}`} className="w-auto h-auto object-contain mx-auto transition duration-300 group-hover:opacity-40" />
-                <a href={paginasWebLinks[index]} target="_blank" rel="noopener noreferrer"
-                  className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="bg-[#020942] text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-indigo-600 transition">Ver en línea</span>
+              <div
+                key={index}
+                className="relative group overflow-hidden shadow-lg hover:scale-105 transition-transform cursor-pointer flex justify-center items-center"
+              >
+                <img
+                  src={imgSrc}
+                  alt={`Web ${index + 1}`}
+                  className="w-auto h-auto object-contain mx-auto transition duration-300 group-hover:opacity-40"
+                />
+                <a
+                  href={paginasWebLinks[index]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <span className="bg-[#020942] text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-indigo-600 transition">
+                    Ver en línea
+                  </span>
                 </a>
               </div>
             ))}
@@ -102,8 +127,15 @@ const Portfolium: React.FC<PortfoliumProps> = ({
           <h3 className="text-2xl font-bold mb-4">Diseño UX/UI</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {disenoUXUI.map((imgSrc, index) => (
-              <div key={index} className="overflow-hidden shadow-lg hover:scale-105 transition-transform cursor-pointer flex justify-center items-center relative z-10">
-                <img src={imgSrc} alt={`UXUI ${paginasWeb.length + index + 1}`} className="w-[320px] h-[220px] object-cover mx-auto relative z-10" />
+              <div
+                key={index}
+                className="overflow-hidden shadow-lg hover:scale-105 transition-transform cursor-pointer flex justify-center items-center relative z-10"
+              >
+                <img
+                  src={imgSrc}
+                  alt={`UXUI ${paginasWeb.length + index + 1}`}
+                  className="w-[320px] h-[220px] object-cover mx-auto relative z-10"
+                />
               </div>
             ))}
           </div>
@@ -113,14 +145,26 @@ const Portfolium: React.FC<PortfoliumProps> = ({
           <h3 className="text-2xl font-bold mb-4">Edición de Video</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {edicionVideo.map((mediaSrc, index) => (
-              <div key={index} className="overflow-hidden shadow-lg hover:scale-105 transition-transform cursor-pointer flex flex-col items-center justify-center relative z-10">
-                {mediaSrc.endsWith('.mp4') ? (
-                  <video controls className="w-auto h-auto object-contain mx-auto relative z-10">
+              <div
+                key={index}
+                className="overflow-hidden shadow-lg hover:scale-105 transition-transform cursor-pointer flex flex-col items-center justify-center relative z-10"
+              >
+                {mediaSrc.endsWith(".mp4") ? (
+                  <video
+                    controls
+                    className="w-auto h-auto object-contain mx-auto relative z-10"
+                  >
                     <source src={mediaSrc} type="video/mp4" />
                     Tu navegador no soporta el video.
                   </video>
                 ) : (
-                  <img src={mediaSrc} alt={`Video ${paginasWeb.length + disenoUXUI.length + index + 1}`} className="w-auto h-auto object-contain mx-auto relative z-10" />
+                  <img
+                    src={mediaSrc}
+                    alt={`Video ${
+                      paginasWeb.length + disenoUXUI.length + index + 1
+                    }`}
+                    className="w-auto h-auto object-contain mx-auto relative z-10"
+                  />
                 )}
               </div>
             ))}

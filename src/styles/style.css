@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 /* Scroll personalizado para toda la página */
-body, html {
+body,
+html {
   scrollbar-width: thin;
   scrollbar-color: #a5b4fc #232954;
-  cursor: url('data:image/svg+xml;utf8,<svg height="32" width="32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="%23a5b4fc"/></svg>') 16 16, pointer;
+  cursor: url('data:image/svg+xml;utf8,<svg height="32" width="32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="%23a5b4fc"/></svg>')
+      16 16,
+    pointer;
 }
 
 /* Scrollbar para navegadores Webkit */
@@ -23,5 +26,27 @@ body, html {
 
 /* Cursor personalizado para todo el contenido */
 * {
-  cursor: url('data:image/svg+xml;utf8,<svg height="32" width="32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="%23a5b4fc"/></svg>') 16 16, pointer;
+  cursor: url('data:image/svg+xml;utf8,<svg height="32" width="32" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" fill="%23a5b4fc"/></svg>')
+      16 16,
+    pointer;
+}
+
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.link-underline:hover::after {
+  width: 100%;
 }
