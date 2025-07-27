@@ -47,9 +47,6 @@ const Home: React.FC = () => {
           <a href="/Reinaldo_Landaeta_CV-1.docx" className="link-underline text-white">
             Ver Curriculum
           </a>
-          <a href="#contacto" className="link-underline text-white">
-            Contacto
-          </a>
         </nav>
       </header>
 
