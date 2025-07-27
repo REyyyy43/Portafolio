@@ -1,69 +1,97 @@
-# React + TypeScript + Vite
+# 💼 Reinaldo Landaeta | Portafolio Profesional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el repositorio de mi portafolio como **Desarrollador Full Stack** y **Diseñador Web**, donde muestro algunos de mis proyectos más relevantes, habilidades técnicas y enfoque creativo para la solución de problemas digitales.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Sitio en línea
 
-## Expanding the ESLint configuration
+🔗 [Visita mi portafolio(https://reyyyy43-github-io-2.onrender.com/)]
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 👨‍💻 Sobre mí
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Soy **Reinaldo Landaeta**, desarrollador web con más de 3 años de experiencia creando soluciones modernas e intuitivas utilizando tecnologías como **React.js, Node.js, Express y MongoDB**, así como herramientas de diseño como **Figma** y **Adobe Photoshop**.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Actualmente curso Ingeniería en Sistemas en la UNEXPO (Guarenas, Venezuela) y combino mis habilidades técnicas con una visión estratégica de producto, diseño UI/UX y ejecución ágil.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Tecnologías utilizadas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Frontend**: React.js, Vite, TypeScript, HTML5, CSS3, JavaScript, TailwindCSS
+- **Backend**: Node.js, Express (usado en proyectos)
+- **Base de datos**: MongoDB, Mongoose
+- **Diseño**: Figma, Illustrator, Photoshop, Canva
+- **Despliegue**: Vercel, Railway
+- **Control de versiones**: Git, GitHub
+
+---
+
+## 🧠 Funcionalidades principales del portafolio
+
+- 🎥 **Video de fondo interactivo**
+- 🧭 Navegación fluida con scroll y anclas
+- 🖼️ Galería de proyectos filtrables por categoría
+- 📱 Responsive Design para móvil, tablet y escritorio
+- 🧩 Componente modular para habilidades y proyectos
+- ⚙️ Optimización de performance con React + Vite
+
+---
+
+## 📁 Estructura del proyecto
+
+src/
+│
+├── assets/ → Imágenes, videos y recursos multimedia
+├── components/ → Componentes reutilizables (Cards, Nav, Footer, etc.)
+├── pages/ → Secciones principales del portafolio
+├── styles/ → Archivos CSS y estilos globales
+├── App.tsx → Componente principal
+├── main.tsx → Punto de entrada de la aplicación
+└── index.html → Estructura HTML base
+
+yaml
+Copiar
+Editar
+
+---
+
+## 🧩 ¿Qué puedes encontrar?
+
+- Sección de **Proyectos** filtrada por categorías: diseño, desarrollo web y edición audiovisual.
+- Vista de **habilidades técnicas** separadas por áreas (Frontend, Backend, Diseño).
+- Botón para ver **otras habilidades complementarias** como marketing digital y edición de video.
+- Enlace directo a mi **LinkedIn**, **GitHub**, y **CV profesional**.
+
+---
+
+## 📬 Contacto
+
+📧 landaetareinaldo61@gmail.com  
+📞 +58 412-7071299  
+🌍 Caracas, Venezuela  
+🔗 [LinkedIn](https://www.linkedin.com/in/reinaldo-landaeta-232188289/)  
+🔗 [GitHub](https://github.com/REyyyy43)
+
+---
+
+## ✨ Contribuciones y feedback
+
+Si tienes sugerencias o deseas colaborar con ideas o mejoras al código, ¡bienvenido! Este proyecto sigue en evolución y estoy abierto a feedback.
+
+---
+
+## 🧠 Psicología aplicada al diseño
+
+El portafolio está pensado con principios de **psicología persuasiva**, como:
+
+- **Prueba social**: Proyectos reales, testimonios y referencias verificables.
+- **Claridad cognitiva**: Diseño limpio, jerarquía visual y navegación simple.
+- **Reciprocidad**: Valor añadido al mostrar habilidades útiles incluso para no técnicos.
+
+---
+
+Gracias por visitar y explorar mi portafolio 🚀
+
